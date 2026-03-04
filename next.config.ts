@@ -8,12 +8,6 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'res.cloudinary.com',
 				pathname: '/**'
-			},
-			// Supabase Storage
-			{
-				protocol: 'https',
-				hostname: 'osraueaoekoiakpdmflw.supabase.co',
-				pathname: '/storage/v1/object/public/**'
 			}
 		]
 	},
