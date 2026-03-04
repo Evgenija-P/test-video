@@ -7,17 +7,6 @@ import { usePathname } from 'next/navigation'
 
 const NavBar = () => {
 	const pathName = usePathname()
-	console.log('pages in nav', pages)
-
-	// useEffect(() => {
-	// 	async function load() {
-	// 		const allPages = await fetchAllPages()
-	// 		setPages(allPages)
-	// 	}
-	// 	load()
-	// }, [])
-
-	// if (!pages.length) return null
 
 	const isActive = (url: string) => pathName === `/${url}`
 
@@ -27,6 +16,7 @@ const NavBar = () => {
 
 			return !p.isFooter && p.number > 0
 		})
+		.filter(p => p.slug !== '/')
 		.sort((a, b) => {
 			if (a.number !== b.number) {
 				return a.number - b.number

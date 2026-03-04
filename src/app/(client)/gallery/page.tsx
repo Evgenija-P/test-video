@@ -1,16 +1,14 @@
 import { pages } from '../../../lib/pagesItems'
 
 import MainComponent from '@/src/components/Main'
+import NewVideoGallery from '@/src/components/NewVideoGallery'
 import NotFoundComponent from '@/src/components/NotFoundComponent'
-import VideoGallery from '@/src/components/VideoGallery'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
 export default async function Travel() {
-	// const page = await fetchPageBySlug('home')
 	const page = pages.find(p => p.slug === 'gallery')
-	console.log('page', page)
 
 	if (!page) {
 		return (
@@ -22,8 +20,7 @@ export default async function Travel() {
 
 	return (
 		<MainComponent>
-			{page?.media.length > 0 && <VideoGallery media={page.media} />}
-			{/* {page?.media.length > 0 && <VideoGalleryStableFade media={page.media} />} */}
+			{page?.media.length > 0 && <NewVideoGallery media={page.media} key={'gallery'} />}
 		</MainComponent>
 	)
 }

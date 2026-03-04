@@ -13,7 +13,7 @@ export const playfairDisplay = Playfair_Display({
 const inter = Inter({ variable: '--font-inter', subsets: ['latin'] })
 
 export const metadata: Metadata = {
-	title: 'Ocheretyana Olga | Videographer | Slow Travel | Europe',
+	title: 'Newgallery | Slow Travel | Europe',
 	description: 'Videographer | Slow Travel | Europe'
 }
 

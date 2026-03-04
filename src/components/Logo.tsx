@@ -8,7 +8,7 @@ const Logo = () => {
 			className={`text-lg xl:text-2xl font-semibold text-nav leading-none! uppercase tracking-5! ${playfairDisplay.className}`}
 			href={'/'}
 		>
-			Ocheretyana
+			Newgallery
 		</Link>
 	)
 }

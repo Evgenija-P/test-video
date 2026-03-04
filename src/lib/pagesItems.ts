@@ -12,7 +12,7 @@ type NewPage = {
 export const pages: NewPage[] = [
 	{
 		title: 'Main',
-		slug: 'main',
+		slug: '/',
 		isPublish: true,
 		isFooter: false,
 		number: 1,
@@ -59,11 +59,7 @@ export const pages: NewPage[] = [
 		number: 2,
 		media: [
 			{ name: 'video1', type: 'video', url: '/videos/fashion/1763489944168-compressed1.mp4' },
-			{
-				name: 'video2',
-				type: 'video',
-				url: '/videos/fashion/IMG_0555-rW7yePPQgauONJ6nahQ6roaSnAwfou.mov4'
-			},
+
 			{
 				name: 'video3',
 				type: 'video',
